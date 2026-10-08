@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LKPD Zat Adiktif – Berani Bilang TIDAK!</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0E9AA7;--deep:#0B5C66;--ink:#12343B;--yel:#FFC93C;--ora:#FF8A4C;--vio:#7B6CF6;--pink:#F2557C;--grn:#2BB673;--bg:#BFE9EC;--card:#FFFFFF;--tint:#E8F8F9;--cream:#FFF6DA;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Nunito,"Segoe UI",Arial,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,.fd{font-family:Fredoka,"Trebuchet MS","Comic Sans MS",sans-serif;line-height:1.15;margin:0}
+.page{max-width:794px;margin:18px auto;padding:30px 34px;background:linear-gradient(170deg,var(--tint),var(--cream));border-radius:26px;border:4px solid #fff;box-shadow:0 6px 0 rgba(11,92,102,.18)}
+.cover{text-align:center;background:linear-gradient(160deg,#0E9AA7,#0B5C66);color:#fff;position:relative;overflow:hidden;min-height:1000px;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.cover h1{font-size:clamp(38px,8vw,64px);color:var(--yel);text-shadow:3px 3px 0 var(--deep)}
+.cover .sub{font-size:19px;font-weight:600}
+.stk{font-size:46px;display:inline-block;background:#fff;border-radius:50%;width:78px;height:78px;line-height:78px;box-shadow:0 4px 0 rgba(0,0,0,.2);margin:4px}
+.stk:nth-child(2n){transform:rotate(-8deg);background:var(--yel)}.stk:nth-child(3n){transform:rotate(7deg);background:#FFD9C2}
+.id{background:#fff;color:var(--ink);border-radius:20px;padding:16px 20px;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;max-width:560px;margin:8px auto 0;width:100%}
+.id label{font-weight:800;font-size:14px;color:var(--deep)}
+input[type=text],input[type=date],textarea,select{width:100%;font:inherit;color:var(--ink);background:#FFFDF2;border:2px dashed #7CCBD2;border-radius:12px;padding:8px 10px}
+textarea{resize:vertical;min-height:64px;background-image:repeating-linear-gradient(transparent,transparent 25px,#BFE3E6 26px);line-height:26px}
+:focus-visible{outline:3px solid var(--ora);outline-offset:2px}
+.id .full{grid-column:1/-1}
+.hd{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.bd{flex:none;width:54px;height:54px;border-radius:18px;display:grid;place-items:center;font:700 28px Fredoka,sans-serif;color:#fff;box-shadow:0 4px 0 rgba(0,0,0,.18);transform:rotate(-5deg)}
+.hd h2{font-size:28px;color:var(--deep)}.hd small{display:block;font:600 14px Nunito,sans-serif;color:#3d6a71}
+.card{background:var(--card);border-radius:20px;padding:16px 18px;margin:12px 0;border:3px solid #CDEFF1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.mini{border-radius:18px;padding:14px;color:#fff;font-weight:600}.mini b{font:700 19px Fredoka,sans-serif;display:block;margin-bottom:4px}
+.info{border-radius:18px;padding:12px 16px;margin:12px 0;font-weight:600;border-left:10px solid}
+.know{background:#FFF1BF;border-color:var(--yel)}.rem{background:#DDF3FF;border-color:var(--teal)}.chal{background:#FFE3D1;border-color:var(--ora)}
+.info b{font-family:Fredoka,sans-serif;font-size:18px}
+ol,ul{padding-left:22px;margin:6px 0}li{margin:4px 0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;margin:6px 0}
+button{font:700 16px Fredoka,sans-serif;background:var(--ora);color:#fff;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;box-shadow:0 4px 0 #C85F26}
+button:active{transform:translateY(3px);box-shadow:0 1px 0 #C85F26}
+.res{font-weight:800;margin-top:8px}
+.ok{color:#117a4a}.no{color:#c2331f}
+select.ok{border:2px solid var(--grn);background:#E5F8EE}select.no{border:2px solid var(--pink);background:#FFE7EC}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.dgrid .card{margin:0;border-width:4px}
+.dgrid h3{font-size:20px;margin-bottom:6px}
+.opt{display:block;width:100%;text-align:left;background:#fff;color:var(--ink);border:2px solid #9ED9DE;box-shadow:none;border-radius:14px;font:600 15px Nunito,sans-serif;padding:8px 12px;margin:5px 0}
+.opt.ok{background:#E5F8EE;border-color:var(--grn)}.opt.no{background:#FFE7EC;border-color:var(--pink)}
+.mf{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.mf button{padding:7px 18px;font-size:15px}.mf .f{background:var(--grn);box-shadow:0 4px 0 #1b8450}.mf .m{background:var(--pink);box-shadow:0 4px 0 #b53a58}
+.emo{display:flex;gap:10px;flex-wrap:wrap}
+.emo button{background:#fff;color:var(--ink);font-size:34px;padding:6px 14px;box-shadow:0 4px 0 #CDEFF1;border:3px solid #CDEFF1}
+.emo button.on{border-color:var(--ora);background:#FFE3D1}
+.tbar{max-width:794px;margin:10px auto;text-align:center}
+.tbar button{background:var(--deep);box-shadow:0 4px 0 #06353b;margin:3px}
+button:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.opt:disabled{opacity:1;color:var(--ink);cursor:default}select:disabled{opacity:1;color:var(--ink)}
+input.ok{border:2px solid var(--grn);background:#E5F8EE}input.no{border:2px solid var(--pink);background:#FFE7EC}
+.lk{background-color:#EEF3F3;cursor:default}.ck{margin:8px 0 4px}
+@media print{.send,.ck{display:none}}
+@media(max-width:600px){.page{margin:10px;padding:20px 16px}.row,.id{grid-template-columns:1fr}.cover{min-height:auto}}
+@media print{@page{size:A4 portrait;margin:8mm}body{background:var(--bg)}.page{margin:0 0 0;max-width:none;box-shadow:none;break-after:page;border-radius:16px}.tbar,.res{display:none}.cover{min-height:270mm}.card,.info,.mini{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="tbar"><button onclick="window.print()">🖨️ Cetak / Simpan PDF (A4)</button><button onclick="document.getElementById('send').scrollIntoView({behavior:'smooth'})">📤 Kirim Jawaban</button></div>
+
+<!-- COVER -->
+<section class="page cover">
+  <div><span class="stk">🧠</span><span class="stk">🛡️</span><span class="stk">🕵️</span><span class="stk">💪</span><span class="stk">🚫</span></div>
+  <div class="fd" style="font-size:20px">LKPD IPA · Kelas IX · 2 × 40 menit</div>
+  <h1>ZAT ADIKTIF</h1>
+  <div class="fd" style="font-size:30px">Kenali, Pahami, Berani Bilang TIDAK!</div>
+  <p class="sub">Misi detektif sehat: temukan fakta, bongkar mitos, dan jadi pelindung dirimu dan teman-temanmu. 🌟</p>
+  <div class="id">
+    <div class="full"><label>Nama</label><input type="text" aria-label="Nama"></div>
+    <div><label>Kelas</label><input type="text" aria-label="Kelas"></div>
+    <div><label>Kelompok</label><input type="text" aria-label="Kelompok"></div>
+    <div class="full"><label>Tanggal</label><input type="date" aria-label="Tanggal"></div>
+  </div>
+</section>
+
+<!-- PETUNJUK + PETA KONSEP -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--teal)">📘</div><h2>Petunjuk Misi<small>Baca dulu ya, hanya satu menit!</small></h2></div>
+  <div class="card"><ol>
+    <li>Bentuk kelompok 4–5 orang, lalu bagi peran: ketua, pencatat, pembaca, penyaji. 🤝</li>
+    <li>Kerjakan kegiatan berurutan. Pakai buku IPA dan peta konsep di bawah.</li>
+    <li>Tulis jawaban di kotak bergaris. Klik <b>Cek Jawaban</b> setelah selesai. Tombol ini hanya bisa dipakai <b>1 kali</b>, lalu jawabanmu terkunci. Terakhir, klik <b>Kirim Jawaban</b>.</li>
+    <li>Bingung? Tanya guru. Siap presentasi di akhir! 🎤</li>
+  </ol></div>
+  <div class="hd" style="margin-top:20px"><div class="bd" style="background:var(--ora)">🗺️</div><h2>Peta Konsep<small>Ringkasan cepat zat adiktif</small></h2></div>
+  <div class="card"><b>Zat adiktif</b> adalah zat yang dapat menimbulkan <b>ketergantungan</b>. Zat ini memengaruhi sistem saraf pusat lewat pembawa pesan otak seperti <b>dopamin</b>, sehingga pengguna merasa senang. Lama-lama muncul <b>toleransi</b> (butuh dosis lebih besar) dan <b>gejala putus zat</b>.</div>
+  <div class="grid">
+    <div class="mini" style="background:var(--teal)"><b>🌿 Narkotika</b>Dari tanaman/sintetis, mengubah kesadaran dan mengurangi nyeri. Diatur ketat undang-undang. Contoh: heroin, morfin, kokain, ganja.</div>
+    <div class="mini" style="background:var(--vio)"><b>💊 Psikotropika</b>Bukan narkotika, memengaruhi mental dan perilaku, dipakai dengan resep dokter. Contoh: diazepam, alprazolam.</div>
+    <div class="mini" style="background:var(--pink)"><b>☕ Zat psikoaktif lain</b>Di luar keduanya dan mudah ditemui. Contoh: nikotin, alkohol, kafein, inhalan (lem, tiner, bensin).</div>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    <div class="mini" style="background:var(--ora)"><b>⚡ Stimulan</b>Mempercepat kerja saraf. Contoh: kafein, nikotin, amfetamin.</div>
+    <div class="mini" style="background:var(--deep)"><b>🌙 Depresan</b>Memperlambat kerja saraf. Contoh: alkohol, heroin.</div>
+    <div class="mini" style="background:var(--grn)"><b>🌀 Halusinogen</b>Mengubah persepsi. Contoh: LSD, ganja.</div>
+  </div>
+  <div class="info know"><b>💡 Tahukah Kamu?</b><br>Kopi dan rokok bukan narkotika, tetapi tetap bisa bikin ketagihan. Tidak ilegal bukan berarti aman!</div>
+  <div class="info rem"><b>📌 Ingat!</b><br>Kelompok narkotika/psikotropika/lainnya dilihat dari jenis dan aturannya. Stimulan/depresan/halusinogen dilihat dari efek pada saraf. Satu zat bisa masuk dua pengelompokan.</div>
+</section>
+
+<!-- KEGIATAN 1 -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--teal)">1</div><h2>Detektif Zat Adiktif 🕵️<small>Tugas: tentukan kelompok setiap zat</small></h2></div>
+  <div class="card"><p style="margin-top:0"><b>A. Pengertian.</b> Tulis arti zat adiktif dengan kalimatmu sendiri:</p><textarea aria-label="Pengertian zat adiktif"></textarea></div>
+  <div class="card"><p style="margin-top:0"><b>B. Cocokkan.</b> Pilih kelompok yang tepat untuk tiap zat.</p><div id="match"></div>
+    <button onclick="chkMatch(this)">Cek Jawaban</button><div class="res" id="matchRes" aria-live="polite"></div></div>
+  <div class="card"><p style="margin-top:0"><b>C. Alur kerja zat adiktif.</b> Lengkapi dengan kata kunci: <i>sistem saraf pusat, dopamin, toleransi, gejala putus zat</i>.</p>
+    <div class="row"><span>Zat masuk dan memengaruhi …</span><input type="text" aria-label="tahap 1"></div>
+    <div class="row"><span>Pembawa pesan otak yang berubah, misalnya …</span><input type="text" aria-label="tahap 2"></div>
+    <div class="row"><span>Dosis harus makin besar disebut …</span><input type="text" aria-label="tahap 3"></div>
+    <div class="row"><span>Gelisah/gemetar saat dihentikan disebut …</span><input type="text" aria-label="tahap 4"></div>
+  </div>
+  <div class="info chal"><b>🔥 Tantangan</b><br>Mengapa kopi atau rokok bisa bikin orang merasa ketagihan? Jelaskan dengan konsep di atas.</div>
+  <textarea aria-label="Jawaban tantangan"></textarea>
+</section>
+
+<!-- KEGIATAN 2 -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--ora)">2</div><h2>Studi Kasus 📰<small>Analisis penyebab, dampak, dan solusi</small></h2></div>
+  <div class="card" style="border-color:#FFD2B5"><h3 style="color:var(--ora)">Kasus 1: Ajakan di Belakang Sekolah</h3>
+    <p>Dimas (14) baru pindah sekolah dan ingin diterima. Kakak kelas mengajaknya mencoba vape sambil berkata, “Cuma sekali, masa nggak berani?” Dimas ragu, tetapi takut dijauhi.</p>
+    <p><b>a.</b> Apa penyebab Dimas merasa tergoda?</p><textarea aria-label="Kasus 1a"></textarea>
+    <p><b>b.</b> Apa dampak jika ia terus mencoba (ingat toleransi dan ketergantungan)?</p><textarea aria-label="Kasus 1b"></textarea>
+    <p><b>c.</b> Solusi apa yang bisa Dimas lakukan?</p><textarea aria-label="Kasus 1c"></textarea></div>
+  <div class="card" style="border-color:#FFD2B5"><h3 style="color:var(--ora)">Kasus 2: Obat “Penenang” dari Teman</h3>
+    <p>Nadia (15) cemas menjelang ujian. Temannya menawarkan pil penenang milik kakaknya, “Tenang, ini obat dokter kok.”</p>
+    <p><b>a.</b> Mengapa obat resep tidak boleh dipakai sembarangan? (petunjuk: psikotropika)</p><textarea aria-label="Kasus 2a"></textarea>
+    <p><b>b.</b> Cara sehat apa yang bisa Nadia pilih untuk mengatasi cemas?</p><textarea aria-label="Kasus 2b"></textarea></div>
+</section>
+
+<!-- KEGIATAN 3 -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--vio)">3</div><h2>Dampak Zat Adiktif 🔍<small>Tabel sebab-akibat: tulis 2 dampak tiap bidang</small></h2></div>
+  <div class="dgrid">
+    <div class="card" style="border-color:#FFC1C9"><h3 style="color:var(--pink)">❤️ Fisik</h3><small>Petunjuk: jantung, paru-paru, otak, napas</small><textarea aria-label="Dampak fisik"></textarea></div>
+    <div class="card" style="border-color:#CFC8FF"><h3 style="color:var(--vio)">🧠 Mental / psikis</h3><small>Petunjuk: cemas, mood, konsentrasi</small><textarea aria-label="Dampak psikis"></textarea></div>
+    <div class="card" style="border-color:#B9ECD2"><h3 style="color:var(--grn)">👨‍👩‍👧 Sosial</h3><small>Petunjuk: keluarga, teman, sekolah</small><textarea aria-label="Dampak sosial"></textarea></div>
+    <div class="card" style="border-color:#FFE59A"><h3 style="color:#B88700">⚖️ Hukum</h3><small>Petunjuk: aturan, sanksi, masa depan</small><textarea aria-label="Dampak hukum"></textarea></div>
+  </div>
+  <div class="info rem"><b>📌 Ingat!</b><br>Depresan membuat reaksi lambat. Pengemudi yang terpengaruh depresan berisiko menyebabkan kecelakaan.</div>
+  <p><b>Pertanyaan analisis:</b> Mengapa zat adiktif memberi efek yang berbeda-beda pada otak dan sistem saraf?</p>
+  <textarea aria-label="Analisis efek berbeda"></textarea>
+  <div class="card"><p style="margin-top:0"><b>Klasifikasi efek.</b> Pilih golongan yang tepat.</p><div id="eff"></div>
+    <button onclick="chkEff(this)">Cek Jawaban</button><div class="res" id="effRes" aria-live="polite"></div></div>
+</section>
+
+<!-- KEGIATAN 4 -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--pink)">4</div><h2>Aku Berani Bilang TIDAK! 🙅<small>Role play dan kampanye</small></h2></div>
+  <div class="card"><h3 style="color:var(--pink)">Jurus T-O-L-A-K</h3>
+    <ul style="list-style:none;padding:0"><li><b>T</b>egas: katakan “tidak” dengan tenang dan mantap.</li><li><b>O</b>lah alasan: “Aku mau jaga kesehatan dan prestasiku.”</li><li><b>L</b>angsung pergi: menjauh dari situasi yang tidak nyaman.</li><li><b>A</b>jak kegiatan lain: “Yuk main futsal saja!”</li><li><b>K</b>abari orang dewasa: guru BK, orang tua, atau layanan kesehatan.</li></ul></div>
+  <div class="card"><b>🎭 Role play 3 orang:</b> pembujuk, korban, dan penolong. Tulis naskah singkat (3–4 dialog) yang memakai minimal 3 jurus TOLAK.</div>
+  <textarea aria-label="Naskah role play" style="min-height:130px"></textarea>
+  <div class="card"><b>📣 Slogan / poster kampanye:</b> buat slogan kreatif (maks. 10 kata) dan gambarkan ide posternya di kotak.</div>
+  <input type="text" aria-label="Slogan" placeholder="Slogan kelompok kami: …">
+  <textarea aria-label="Ide poster" style="min-height:170px;margin-top:10px" placeholder="Sketsa / deskripsi poster…"></textarea>
+  <div class="info chal"><b>🔥 Tantangan</b><br>Jika temanmu terlihat kecanduan sesuatu, apa yang kamu lakukan? (misalnya mengajak bicara dan melapor ke guru BK atau orang tua)</div>
+</section>
+
+<!-- GAME -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--grn)">🎮</div><h2>Game Seru: Mitos vs Fakta<small>Tekan tombol yang menurutmu benar</small></h2></div>
+  <div id="mf"></div>
+  <div class="res" id="mfScore" style="font-size:20px"></div>
+</section>
+
+<!-- REFLEKSI -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--yel);color:var(--ink)">💭</div><h2>Refleksi<small>Jujur pada dirimu sendiri</small></h2></div>
+  <div class="card"><b>Aku jadi tahu …</b><textarea aria-label="Aku jadi tahu"></textarea></div>
+  <div class="card"><b>Aku berkomitmen untuk …</b><textarea aria-label="Aku berkomitmen"></textarea></div>
+  <div class="card"><b>Seberapa paham kamu hari ini?</b><div class="emo" id="emo" role="group" aria-label="Skala pemahaman"></div></div>
+</section>
+
+<!-- KUIS -->
+<section class="page">
+  <div class="hd"><div class="bd" style="background:var(--deep)">✅</div><h2>Kuis Akhir<small>5 pilihan ganda (1 poin) + 2 uraian (maks. 2 poin)</small></h2></div>
+  <div id="quiz"></div>
+  <button onclick="chkQuiz(this)">Cek Jawaban</button><div class="res" id="qRes" style="font-size:20px" aria-live="polite"></div>
+  <div class="card" style="margin-top:14px"><b>6. Uraian:</b> Jelaskan mengapa pemakaian berulang zat adiktif menimbulkan toleransi dan ketergantungan.<textarea aria-label="Uraian 6"></textarea></div>
+  <div class="card"><b>7. Uraian:</b> Teman mengajakmu mencoba rokok. Tulis kalimat penolakanmu dan satu alasan ilmiahnya.<textarea aria-label="Uraian 7"></textarea></div>
+  <div class="card" style="text-align:center"><div class="res" id="totRes" style="font-size:22px" aria-live="polite">Skor total akan muncul setelah kamu mengecek pilihan ganda dan uraian.</div></div>
+</section>
+
+<!-- KIRIM JAWABAN -->
+<section class="page send" id="send">
+  <div class="hd"><div class="bd" style="background:var(--ora)">📤</div><h2>Kirim Jawaban<small>Selesaikan semua tombol Cek Jawaban, lalu kirim ke gurumu</small></h2></div>
+  <div class="card"><button onclick="prepSend()">📤 Kirim Jawaban</button><div class="res" id="sendRes" aria-live="polite"></div>
+    <div id="sendBox" style="display:none;margin-top:10px"><textarea id="sendTxt" readonly aria-label="Ringkasan jawaban" style="min-height:180px"></textarea>
+      <div class="mf"><button class="f" onclick="sendWA()">💬 Kirim lewat WhatsApp</button><button onclick="dlTxt()">⬇️ Unduh file jawaban</button><button style="background:var(--vio);box-shadow:0 4px 0 #5648c9" onclick="cpTxt()">📋 Salin</button></div></div></div>
+</section>
+
+<script>
+const $=id=>document.getElementById(id);
+const M=[["Kopi (kafein)",2],["Rokok dan vape (nikotin)",2],["Bir dan wine (alkohol)",2],["Lem, tiner, bensin (inhalan)",2],["Ganja",0],["Heroin",0],["Morfin",0],["Diazepam",1]];
+const KL=["Narkotika","Psikotropika","Zat psikoaktif lainnya"];
+const E=[["Kafein",0],["Alkohol",1],["LSD",2],["Amfetamin",0],["Heroin",1],["Ganja",2]];
+const EL=["Stimulan","Depresan","Halusinogen"];
+function sel(list,labels,pre){return list.map((r,i)=>`<div class="row"><span>${r[0]}</span><select id="${pre}${i}" aria-label="${r[0]}"><option value="">Pilih…</option>${labels.map((l,j)=>`<option value="${j}">${l}</option>`).join("")}</select></div>`).join("")}
+$("match").innerHTML=sel(M,KL,"m");$("eff").innerHTML=sel(E,EL,"e");
+function chk(list,labels,pre,out,key,btn){
+ const xs=list.map((r,i)=>$(pre+i));
+ if(xs.some(x=>x.value==="")){$(out).className="res no";$(out).textContent="Jawab semua pilihan dulu ya, baru klik Cek Jawaban. 🙂";return}
+ let s=0;
+ list.forEach((r,i)=>{const x=xs[i],ok=+x.value===r[1];x.className=ok?"ok":"no";x.disabled=true;if(ok)s++;
+  else x.parentNode.insertAdjacentHTML("beforeend",`<div class="res no" style="grid-column:1/-1;margin:0">Jawaban benar: ${labels[r[1]]}</div>`)});
+ btn.disabled=true;done.add(key);
+ $(out).className="res "+(s===list.length?"ok":"no");$(out).textContent=s===list.length?"🎉 Hebat! Semua benar ("+s+"/"+list.length+")":"Benar "+s+" dari "+list.length+". Jawaban yang benar ada di bawah pilihan yang keliru. Pelajari ya! 💪"}
+const chkMatch=b=>chk(M,KL,"m","matchRes","match",b),chkEff=b=>chk(E,EL,"e","effRes","eff",b);
+const MF=[["Vape pasti aman dan tidak membuat ketagihan.",0],["Semua zat adiktif adalah narkoba ilegal.",0],["Menghirup lem atau bensin tidak berbahaya karena bukan narkotika.",0],["Orang yang ketergantungan bisa dibantu lewat konseling dan layanan kesehatan.",1],["Berani bilang “tidak” adalah tanda pribadi yang kuat.",1],["Alkohol memperlambat kerja sistem saraf pusat.",1]];
+let mfDone=0,mfRight=0;
+$("mf").innerHTML=MF.map((q,i)=>`<div class="card"><b>${i+1}.</b> ${q[0]}<div class="mf"><button class="f" onclick="mf(${i},1,this)">✅ Fakta</button><button class="m" onclick="mf(${i},0,this)">❌ Mitos</button></div><div class="res" id="mf${i}" aria-live="polite"></div></div>`).join("");
+function mf(i,v,b){const p=b.parentNode;if(p.dataset.d)return;p.dataset.d=1;mfDone++;MFA[i]=v;const ok=v===MF[i][1];if(ok)mfRight++;
+ $("mf"+i).className="res "+(ok?"ok":"no");$("mf"+i).textContent=ok?"Tepat! 🎉":"Belum tepat. Jawaban yang benar: "+(MF[i][1]?"Fakta":"Mitos");
+ if(mfDone===MF.length)$("mfScore").textContent="Skor Mitos vs Fakta: "+mfRight+" / "+MF.length+" ⭐";done.add("mf")}
+const EM=["😕","🙂","😀","🤩"];
+$("emo").innerHTML=EM.map((e,i)=>`<button aria-label="Tingkat ${i+1} dari 4" onclick="document.querySelectorAll('#emo button').forEach(x=>x.classList.remove('on'));this.classList.add('on')">${e}</button>`).join("");
+const Q=[["Zat yang dapat menimbulkan ketergantungan disebut …",["Zat aditif makanan","Zat adiktif","Zat antibodi","Zat nutrisi"],1],
+["Kopi (kafein) termasuk kelompok …",["Narkotika","Psikotropika","Zat psikoaktif lainnya","Obat resep"],2],
+["Alkohol bersifat depresan, artinya …",["Memperlambat kerja sistem saraf","Mempercepat kerja saraf","Menimbulkan halusinasi","Menambah energi"],0],
+["Contoh dampak sosial penyalahgunaan zat adiktif adalah …",["Paru-paru rusak","Jantung berdebar","Sulit konsentrasi","Dijauhi teman dan konflik keluarga"],3],
+["Sikap terbaik saat ditawari rokok oleh teman adalah …",["Mencoba sedikit saja","Menolak tegas dan menjauh","Diam saja","Menerima agar diterima"],1]];
+$("quiz").innerHTML=Q.map((q,i)=>`<div class="card"><b>${i+1}.</b> ${q[0]}${q[1].map((o,j)=>`<button class="opt" data-q="${i}" data-j="${j}" onclick="pick(this)">${"ABCD"[j]}. ${o}</button>`).join("")}</div>`).join("");
+const ans={};
+function pick(b){const q=b.dataset.q;document.querySelectorAll('[data-q="'+q+'"]').forEach(x=>x.classList.remove("ok","no"));b.style.outline="3px solid var(--teal)";document.querySelectorAll('[data-q="'+q+'"]').forEach(x=>{if(x!==b)x.style.outline=""});ans[q]=+b.dataset.j}
+function chkQuiz(b){
+ if(Object.keys(ans).length<Q.length){$("qRes").className="res no";$("qRes").textContent="Jawab semua soal dulu ya, baru klik Cek Jawaban. 🙂";return}
+ let s=0;
+ Q.forEach((q,i)=>{const bs=document.querySelectorAll('[data-q="'+i+'"]');
+  bs.forEach(x=>{x.style.outline="";x.disabled=true;if(+x.dataset.j===q[2])x.classList.add("ok");else if(ans[i]===+x.dataset.j)x.classList.add("no")});
+  if(ans[i]===q[2]){s++;bs[0].parentNode.insertAdjacentHTML("beforeend",`<div class="res ok">Benar! 1 dari 1 poin</div>`)}else bs[0].parentNode.insertAdjacentHTML("beforeend",`<div class="res no">0 dari 1 poin. Jawaban benar: ${"ABCD"[q[2]]}. ${q[1][q[2]]}</div>`)});
+ b.disabled=true;done.add("quiz");QS=s;showTotal();
+ $("qRes").className="res "+(s>=4?"ok":"no");$("qRes").textContent="Skor pilihan ganda: "+s+" / 5 "+(s>=4?"🏆":"💪 Ayo pelajari lagi!")}
+const done=new Set(),MFA={};let QS=0,pc=0,UP=[0,0],NL=0;
+function showTotal(){if(!(done.has("quiz")&&done.has("g6")))return;const t=QS+UP[0]+UP[1];NL=Math.round(t/9*100);
+ $("totRes").className="res "+(NL>=75?"ok":"no");$("totRes").textContent="Skor: "+t+" / 9, Nilai: "+NL}
+const GURU_WA=""; // isi nomor WhatsApp guru, format 628xxxxxxxxxx (kosongkan agar siswa memilih kontak sendiri)
+const OG={
+ g1A:{n:"Kegiatan 1A - Pengertian",l:["Pengertian zat adiktif"]},
+ g1C:{n:"Kegiatan 1C - Alur kerja",l:["tahap 1","tahap 2","tahap 3","tahap 4"],k:[["sistem saraf pusat","saraf pusat"],["dopamin"],["toleransi"],["gejala putus zat","putus zat"]],t:["sistem saraf pusat","dopamin","toleransi","gejala putus zat"]},
+ g1T:{n:"Kegiatan 1 - Tantangan",l:["Jawaban tantangan"]},
+ g2a:{n:"Kegiatan 2 - Kasus 1",l:["Kasus 1a","Kasus 1b","Kasus 1c"]},
+ g2b:{n:"Kegiatan 2 - Kasus 2",l:["Kasus 2a","Kasus 2b"]},
+ g3:{n:"Kegiatan 3 - Dampak",l:["Dampak fisik","Dampak psikis","Dampak sosial","Dampak hukum","Analisis efek berbeda"]},
+ g4:{n:"Kegiatan 4 - Kampanye",l:["Naskah role play","Slogan","Ide poster"]},
+ g5:{n:"Refleksi",l:["Aku jadi tahu","Aku berkomitmen"]},
+ g6:{n:"Kuis - Uraian",l:["Uraian 6","Uraian 7"],
+  sc:[[/toleransi|adaptasi|menyesuaikan|dosis[^.]*(besar|tinggi|naik|lebih|banyak)/,/putus zat|ketergantungan|ketagihan|kecanduan|candu|ingin (memakai|mengonsumsi|pakai|lagi)/],
+      [/tidak|nggak|enggak|\bgak\b|\btak\b|tolak|menolak|ogah/,/nikotin|adiktif|paru|jantung|ketergantungan|kecanduan|ketagihan|candu|kanker|racun|berbahaya/]],
+  ex:["Pemakaian berulang membuat otak menyesuaikan diri sehingga dosis harus makin besar agar efek sama (toleransi), dan jika dihentikan muncul gejala putus zat sehingga ingin memakai lagi (ketergantungan).",
+      "“Tidak, aku tidak mau.” Alasannya: nikotin dalam rokok bersifat adiktif dan merusak paru-paru serta jantung."]}};
+const q1=l=>document.querySelector('[aria-label="'+l+'"]');
+Object.keys(OG).forEach(g=>{const ls=OG[g].l,last=q1(ls[ls.length-1]);
+ ls.forEach(l=>q1(l).dataset.g=g);
+ (last.closest(".row")||last).insertAdjacentHTML("afterend",`<div class="ck"><button onclick="chkOpen('${g}',this)">Cek Jawaban</button><div class="res" id="r_${g}" aria-live="polite"></div></div>`)});
+const PUJI=["Hebat! Kamu sudah menjawab dengan sungguh-sungguh 🌟","Mantap! Usahamu patut diapresiasi 👏","Keren! Terima kasih sudah berani menuangkan ide dan pemikiranmu 🎉","Bagus sekali! Terus semangat belajar ya 💪"];
+function chkOpen(g,b){const o=OG[g],els=o.l.map(q1),r=$("r_"+g);
+ if(els.some(e=>!e.value.trim())){r.className="res no";r.textContent="Isi semua kolom dulu ya, lalu klik Cek Jawaban. ✍️";return}
+ let w=0;
+ els.forEach((e,i)=>{e.readOnly=true;e.classList.add("lk");
+  if(o.k){const ok=o.k[i].some(k=>e.value.toLowerCase().includes(k));e.classList.add(ok?"ok":"no");
+   if(!ok){w++;e.closest(".row").insertAdjacentHTML("beforeend",`<div class="res no" style="grid-column:1/-1;margin:0">Jawaban yang tepat: ${o.t[i]}</div>`)}}});
+ if(o.sc){UP=o.sc.map((p,i)=>{const v=els[i].value.toLowerCase();return(p[0].test(v)?1:0)+(p[1].test(v)?1:0)});
+  els.forEach((e,i)=>e.closest(".card").insertAdjacentHTML("beforeend",`<div class="res ${UP[i]===2?"ok":"no"}">Soal ${6+i}: ${UP[i]} dari 2 poin${UP[i]<2?"<br>Contoh jawaban lengkap: "+o.ex[i]:""}</div>`))}
+ b.disabled=true;done.add(g);if(o.sc)showTotal();
+ const nm=q1("Nama").value.trim().split(" ")[0],p=PUJI[pc++%PUJI.length];
+ r.className="res ok";r.textContent=(w?"Terima kasih sudah berusaha! Jawaban yang tepat sudah ditampilkan. ":"")+(nm?nm+", ":"")+p}
+function buildText(){
+ const g=l=>q1(l).value.trim(),T=[];
+ T.push("LKPD ZAT ADIKTIF - JAWABAN SISWA","Nama: "+g("Nama"),"Kelas: "+g("Kelas"),"Kelompok: "+g("Kelompok"),"Tanggal: "+g("Tanggal"),"");
+ const selT=(list,labels,pre)=>{let s=0;const L=list.map((r,i)=>{const v=+$(pre+i).value,ok=v===r[1];if(ok)s++;return"- "+r[0]+": "+labels[v]+(ok?" (benar)":" (salah, seharusnya "+labels[r[1]]+")")});return L.concat("Skor: "+s+"/"+list.length)};
+ const sec={match:["Kegiatan 1B - Cocokkan",()=>selT(M,KL,"m")],eff:["Kegiatan 3 - Klasifikasi efek",()=>selT(E,EL,"e")],
+  mf:["Game Mitos vs Fakta",()=>MF.map((q,i)=>"- "+q[0]+" -> "+(MFA[i]?"Fakta":"Mitos")+(MFA[i]===q[1]?" (benar)":" (salah)")).concat("Skor: "+MF.filter((q,i)=>MFA[i]===q[1]).length+"/"+MF.length)],
+  emo:["Refleksi - Tingkat pemahaman",()=>{const bs=[...document.querySelectorAll("#emo button")],k=bs.findIndex(x=>x.classList.contains("on"));return[k<0?"(tidak diisi)":EM[k]+" ("+(k+1)+" dari 4)"]}],
+  quiz:["Kuis Akhir - Pilihan ganda",()=>Q.map((q,i)=>(i+1)+". "+"ABCD"[ans[i]]+(ans[i]===q[2]?" (benar, 1 poin)":" (salah, 0 poin, seharusnya "+"ABCD"[q[2]]+")")).concat("Skor pilihan ganda: "+QS+"/5")]};
+ ORD.forEach(t=>{if(OG[t]){T.push("== "+OG[t].n+" ==");OG[t].l.forEach(l=>T.push(l+": "+g(l)));if(t==="g6")T.push("Poin Uraian 6: "+UP[0]+"/2","Poin Uraian 7: "+UP[1]+"/2")}else{T.push("== "+sec[t][0]+" ==");sec[t][1]().forEach(x=>T.push(x))}T.push("")});
+ const tot=QS+UP[0]+UP[1];T.push("== HASIL AKHIR KUIS ==","Skor: "+tot+" / 9","Nilai: "+Math.round(tot/9*100)+" (skor / 9 x 100)");
+ return T.join("\n")}
+const ORD=["g1A","match","g1C","g1T","g2a","g2b","g3","eff","g4","mf","g5","emo","quiz","g6"];
+function prepSend(){const r=$("sendRes");
+ if(!q1("Nama").value.trim()){r.className="res no";r.textContent="Isi Nama di halaman sampul dulu ya. 🙂";return}
+ const miss=ORD.filter(t=>t!=="emo"&&!done.has(t));
+ if(miss.length){r.className="res no";r.textContent="Masih ada "+miss.length+" bagian yang belum dicek. Klik Cek Jawaban pada semua bagian dulu ya. 🔎";return}
+ $("sendTxt").value=buildText();$("sendBox").style.display="block";r.className="res ok";r.textContent="✅ Jawabanmu siap dikirim. Pilih cara mengirim di bawah ini."}
+function sendWA(){const u="https://wa.me/"+GURU_WA+"?text="+encodeURIComponent($("sendTxt").value);
+ if(u.length>6500){$("sendRes").className="res no";$("sendRes").textContent="Jawabanmu terlalu panjang untuk dikirim langsung. Klik Unduh file jawaban, lalu kirim file itu lewat WhatsApp.";return}
+ window.open(u,"_blank")}
+function dlTxt(){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([$("sendTxt").value],{type:"text/plain;charset=utf-8"}));
+ a.download="Jawaban_LKPD_"+(q1("Nama").value.trim().replace(/\s+/g,"_")||"siswa")+".txt";document.body.appendChild(a);a.click();a.remove()}
+function cpTxt(){const t=$("sendTxt");t.select();(navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).catch(()=>document.execCommand("copy"));$("sendRes").className="res ok";$("sendRes").textContent="📋 Jawaban disalin. Tempel di pesan ke gurumu."}
+</script>
+</body>
+</html>
